@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Refactor T-Shirt Assignment</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link type="text/css" rel="stylesheet" href="CSS/product.css">
+<script src="https://use.fontawesome.com/ae699f5e09.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+		
+	<div class="col-md-4 left">
+		<div class="wrap">
+			<div class="row upper">
+				<div class="flipbox"><i class="fa fa-random"></i></div>
+				<img src="Images/blueshirt.png" class="mainTshirt">
+
+			</div>
+
+			<div class="row lower">
+			<div class="subbox"><i class="fa fa-refresh"></i></div>
+			<div class="subbox"><i class="fa fa-heart"></i></div>
+				
+				<div class="subbox">
+					<div class="dropdown">
+						<button class="dropbtnText">XL</button>
+						
+						<div class="dropdown_content">
+							<ul>
+								<li><img src="Images/xl.png"></li>
+								<li><img src="Images/l.png"></li>
+								<li><img src="Images/m.png"></li>
+								<li><img src="Images/s.png"></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="subbox"> 
+
+					<div class="dropdown">
+						<button class="dropbtnIMG"><i class="fa fa-square"></i> </button>
+
+							<div class="dropdown_content boxesdropdwn">
+								<i class="fa fa-square one"></i>
+								<i class="fa fa-square two"></i>
+								<i class="fa fa-square three"></i>
+								<i class="fa fa-square four"></i>
+							</div>
+
+					</div>
+				</div>
+				
+				<div onClick="addToCart('blue',29)" id="cart1" class="subbox"><i class="fa fa-shopping-cart"></i></div>
+
+			</div>
+
+			</div>
+		<div class="row">
+			<p>Save my Trees</p><h1>$29</h1>
+		</div>		
+	</div>
+
+	<div class="col-md-4 middle">
+				<div class="wrap">
+			<div class="row upper">
+				<div class="flipbox"><i class="fa fa-random"></i></div>
+				<img src="Images/pinkshirt.png" class="mainTshirt">
+
+			</div>
+
+			<div class="row lower">
+			<div class="subbox"><i class="fa fa-refresh"></i></div>
+			<div class="subbox"><i class="fa fa-heart"></i></div>
+				
+				<div class="subbox">
+					<div class="dropdown">
+						<button class="dropbtnText">XL</button>
+						
+						<div class="dropdown_content">
+							<ul>
+								<li><img src="Images/xl.png"></li>
+								<li><img src="Images/l.png"></li>
+								<li><img src="Images/m.png"></li>
+								<li><img src="Images/s.png"></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="subbox"> 
+
+					<div class="dropdown">
+						<button class="dropbtnIMGtwo"><i class="fa fa-square"></i> </button>
+
+							<div class="dropdown_content boxesdropdwn">
+								<i class="fa fa-square one"></i>
+								<i class="fa fa-square two"></i>
+								<i class="fa fa-square three"></i>
+								<i class="fa fa-square four"></i>
+							</div>
+
+					</div>
+				</div>
+				
+				<div onClick="addToCart('pink',19)" id="cart2" class="subbox"><i class="fa fa-shopping-cart"></i></div>
+
+			</div>
+
+			</div>
+		<div class="row">
+			<p>Nature Lover</p><h1>$19</h1>
+		</div>	
+	</div>
+<div class="col-md-4 right">
+				<div class="wrap">
+			<div class="row upper">
+				<div class="flipbox"><i class="fa fa-random"></i></div>
+				<img src="Images/orangeshirt.png" class="mainTshirt">
+
+			</div>
+
+			<div class="row lower">
+			<div class="subbox"><i class="fa fa-refresh"></i></div>
+			<div class="subbox"><i class="fa fa-heart"></i></div>
+				
+				<div class="subbox">
+					<div class="dropdown">
+						<button class="dropbtnText">XL</button>
+						
+						<div class="dropdown_content">
+							<ul>
+								<li><img src="Images/xl.png"></li>
+								<li><img src="Images/l.png"></li>
+								<li><img src="Images/m.png"></li>
+								<li><img src="Images/s.png"></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="subbox"> 
+
+					<div class="dropdown">
+						<button class="dropbtnIMGthree"><i class="fa fa-square"></i> </button>
+
+							<div class="dropdown_content boxesdropdwn">
+								<i class="fa fa-square one"></i>
+								<i class="fa fa-square two"></i>
+								<i class="fa fa-square three"></i>
+								<i class="fa fa-square four"></i>
+							</div>
+
+					</div>
+				</div>
+				
+				<div onClick="addToCart('orange',39)" id="cart3" class="subbox"><i class="fa fa-shopping-cart"></i></div>
+
+			</div>
+
+			</div>
+		<div class="row">
+			<p>Forrest Walk</p><h1>$39</h1>
+		</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="containerCart clearfix">
+
+	<div class="col-md-4 col-sm-6 col-xs-12 named">
+		<div class="row ItemSub">
+		<h2>Subtotal </h2>
+		</div>
+
+		<div class="row Tax">
+		<h2>Tax</h2>
+		</div>
+
+		<div class="row Total">
+		<h2>Total</h2>
+		</div>
+
+	</div>
+
+	<div class="col-md-4 col-sm-6 col-xs-12 numbers">
+		<div class="row ItemSub">
+		<h2 id="subtotalBox"> </h2>
+		</div>
+
+		<div class="row Tax">
+		<h2> 6.5% </h2>
+		</div>
+
+		<div class="row Total">
+		<h2 id="totalinput"> </h2>
+		</div>
+
+	</div>
+
+	<div class="col-md-4 col-sm-6 col-xs-12 cartItem">
+	<h1>In Cart</h1>
+		<div id="activeItem" class="row activeItem"> </div> <div id="date"></div>
+
+	</div>
+	
+</div>
+<script src="js/main.js"></script>
+</body>

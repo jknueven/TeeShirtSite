@@ -1,11 +1,3 @@
-$primaryColor: #7FBBE8;
-
-$secondaryColor: #D382AA;
-
-$tertiaryColor: #DDB179;
-
-@import "text";
-
 @mixin bodystyles() {
 	font-family: arial;
 	background-color: white;

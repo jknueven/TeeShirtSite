@@ -31,6 +31,7 @@ $tertiaryColor: #A12069;
 	position:absolute;
 	vertical-align:top;
 	top:-102px;
+	margin-left: 70px;
 
 	li {
 		display: inline;
@@ -46,6 +47,24 @@ a:hover {
 
 .Logo {
 	float:left;
+}
+
+.circleHeader {
+  width:100px;
+  height:100px;
+  border:5px solid #6CC49A;
+  margin-left:-20px;
+  border-radius:50%;
+  background-color:white;
+}
+
+.circleHeader img {
+  left: -10px;
+  max-height: 75px;
+  max-width: 85px;
+  position: relative;
+  top: 6px;
+  transform: rotate(-15deg);
 }
 
 .containerIMG {

@@ -380,3 +380,18 @@ span.price {
 	color:$primaryColor;
 	text-align:right;
 }
+
+
+.rowTag	{
+	height:50px;
+	width:100%;
+
+	h1 {
+	background-color:white;
+	border-bottom:2px dotted $primaryColor;
+    font-size: 21px;
+    margin-left: 14px;
+    padding: 4px;
+    float:left;
+	}
+}

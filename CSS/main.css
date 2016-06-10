@@ -344,6 +344,17 @@ span.price {
   color: #6CC49A;
   text-align: right; }
 
+.rowTag {
+  height: 50px;
+  width: 100%; }
+  .rowTag h1 {
+    background-color: white;
+    border-bottom: 2px dotted #6CC49A;
+    font-size: 21px;
+    margin-left: 14px;
+    padding: 4px;
+    float: left; }
+
 .containerIMG.about {
   width: 100%;
   height: 409px; }
@@ -468,15 +479,6 @@ a:hover {
   .containerIMG img {
     width: 100%;
     height: 50%; }
-  .containerIMG h1 {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 4px 8px 4px 1px rgba(0, 0, 0, 0.5);
-    font-size: 21px;
-    left: 44px;
-    position: absolute;
-    top: 420px;
-    padding: 4px; }
 
 .Content {
   width: 100%;

@@ -1,3 +1,7 @@
+$primaryColor: #6CC49A;
+
+$secondaryColor:#7FBBE8;
+
 @mixin bodystyles() {
 	font-family: arial;
 	background-color: white;
@@ -15,9 +19,9 @@ body {
 }
 
 .mainTshirt {
-	height:300px;
+	height:240px;
 	position: justify;
-	margin-left: 30px;
+	margin-left: 10px;
 }
 
 .wrap {
@@ -68,7 +72,7 @@ body {
 	font-size: 20px;
 	color: $primaryColor;
 	margin-top: 9px;
-	margin-left: 26px;
+	margin-left: 17px;
 	display: inline-block;
 	}
 
@@ -96,7 +100,7 @@ body {
     display: inline-block;
     background: none;
     margin-top: 7px; 
-    margin-left: 19px;
+    margin-left: 10px;
 }
 
 .subbox:hover {
@@ -167,7 +171,7 @@ body {
     background-color: white;
     border: 2px solid $primaryColor;
     border-bottom: none;
-    min-width: 72px;
+    min-width: 105%;
     top: -196px;
     left:-2px;
 
@@ -186,7 +190,7 @@ body {
     background: none;
     padding: 0;
     margin-top: 7px; 
-    margin-left: 26px;
+    margin-left: 17px;
 }
 
 .dropbtnIMG i {
@@ -313,7 +317,7 @@ body {
 .containerCart {
 	width:55%;
 	height:40%;
-	margin-left: 53px;
+	margin-left: 14px;
 	margin-bottom:10px;
 	border: 2px solid $primaryColor;
 	border-radius: 5px 5px 5px 5px;

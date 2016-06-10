@@ -1,0 +1,34 @@
+.containerIMG.about {
+	width:100%;
+	height:409px;
+
+	img {
+	height: 100%;
+	width:55%;
+	}
+}
+
+.containerIMG.about {
+	h2 {
+	bottom: -40px;
+    color: #6cc49a;
+    font-size: 40px;
+    left: 91px;
+    position: relative;
+    text-align:left;
+	}
+	p {
+	font-size: 20px;
+	font-style:italic;
+	float:right;
+	opacity:0.5;
+	}
+}
+.container-fluid.Content {
+	width:100%;
+}
+
+.contentMain {
+	width:60%;
+	margin-top:20px;
+}

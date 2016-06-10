@@ -374,10 +374,10 @@ span.price {
 
 .calloutBox {
   border-radius: 5px;
-  bottom: 20px;
+  top: 300px;
   height: 128px;
   position: fixed;
-  right: 100px;
+  left: 125px;
   width: 204px;
   background-color: #6CC49A; }
   .calloutBox .upper {

@@ -1,20 +1,24 @@
-.containerIMG.about {
-	width:100%;
+.aboutPhoto {
 	height:409px;
+	z-index:-1;
+	padding:0;
+	top:-5px;
+	margin-bottom:-5px;
 
 	img {
 	height: 100%;
-	width:55%;
+	width:auto;
 	}
 }
 
-.containerIMG.about {
+.aboutText {
+	background-color:white;
+
 	h2 {
-	bottom: -40px;
+	top: 140px;
     color: #6cc49a;
     font-size: 40px;
     left: 91px;
-    position: relative;
     text-align:left;
 	}
 	p {
@@ -24,6 +28,12 @@
 	opacity:0.5;
 	}
 }
+
+.container-fluid.aboutMiddle {
+	height:auto;
+	width:100%;
+}
+
 .container-fluid.Content {
 	width:100%;
 }
@@ -31,4 +41,20 @@
 .contentMain {
 	width:60%;
 	margin-top:20px;
+}
+
+@media screen and (max-width: 980px) {
+	.containerIMG.about img {
+		width:100%;
+	}
+
+	.aboutPhoto {
+		height:auto;
+	}
+}
+
+@media screen and (max-width:360px) {
+	.aboutText {
+		margin-top: 30px;
+	}
 }

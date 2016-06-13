@@ -34,20 +34,25 @@ $tertiaryColor: #A12069;
 	display:inline-block;
 	position:absolute;
 	vertical-align:top;
-	top:-102px;
+	top:25px;
 	margin-left: 70px;
 
 	li {
-		display: inline;
+		display: inline-block;
 		padding-right:20px;
+	}
+
+	a{
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+	float: right;
+	color: white;
+	margin-top: 3px;
 	}
 }
 
-a:hover {
-	width:100%;
-	height:100%;
-	color:white;
-}
 
 .Logo {
 	float:left;
@@ -95,10 +100,12 @@ a:hover {
 
 .contentMenu{
 	margin-top:10px;
+	height:100%;
 }
 
 .contentMain {
 	margin-left:10px;
+	width:auto;
 }
 
 .insetMenu {
@@ -127,4 +134,69 @@ a:hover {
 	.fa-yelp {
 		margin-right: 6px;
 	}
+}
+
+.mobileMenu {
+	position:relative;
+	z-index: 999999;
+	
+	i{
+		font-size: 30px;
+		color:white;
+		float:right;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	ul, &:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 5px;
+		background: white;
+		border: 5px solid $tertiaryColor;
+		right: 20px;
+		top: 48px;
+		width: 30%;
+		border-radius: 0px 0 4px 4px;
+
+	}
+
+	li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	&:hover ul {
+		color:$primaryColor;
+		display: block;
+		list-style: none;
+
+		a {
+			color:$primaryColor;
+		}
+
+		a:hover {
+			color:$quadraryColor;
+			text-decoration: none;
+		}
+
+	}
+}
+
+@media only screen and (max-width: 980px) {
+    .Content {
+        height: 699px;
+    }
+
+}
+
+@media only screen and (min-width:990px) {
+	.contentMain {
+    	width:60%;
+    }
 }

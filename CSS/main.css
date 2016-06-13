@@ -358,26 +358,33 @@ span.price {
     padding: 4px;
     float: left; }
 
-.containerIMG.about {
-  width: 100%;
-  height: 409px; }
-  .containerIMG.about img {
+.aboutPhoto {
+  height: 409px;
+  z-index: -1;
+  padding: 0;
+  top: -5px;
+  margin-bottom: -5px; }
+  .aboutPhoto img {
     height: 100%;
-    width: 55%; }
+    width: auto; }
 
-.containerIMG.about h2 {
-  bottom: -40px;
-  color: #6cc49a;
-  font-size: 40px;
-  left: 91px;
-  position: relative;
-  text-align: left; }
+.aboutText {
+  background-color: white; }
+  .aboutText h2 {
+    top: 140px;
+    color: #6cc49a;
+    font-size: 40px;
+    left: 91px;
+    text-align: left; }
+  .aboutText p {
+    font-size: 20px;
+    font-style: italic;
+    float: right;
+    opacity: 0.5; }
 
-.containerIMG.about p {
-  font-size: 20px;
-  font-style: italic;
-  float: right;
-  opacity: 0.5; }
+.container-fluid.aboutMiddle {
+  height: auto;
+  width: 100%; }
 
 .container-fluid.Content {
   width: 100%; }
@@ -385,6 +392,16 @@ span.price {
 .contentMain {
   width: 60%;
   margin-top: 20px; }
+
+@media screen and (max-width: 980px) {
+  .containerIMG.about img {
+    width: 100%; }
+  .aboutPhoto {
+    height: auto; } }
+
+@media screen and (max-width: 360px) {
+  .aboutText {
+    margin-top: 30px; } }
 
 .calloutBox {
   border-radius: 5px;
@@ -429,6 +446,10 @@ span.price {
   margin-left: 44px;
   margin-top: 16px; }
 
+@media only screen and (max-width: 990px) {
+  .contentContact {
+    border-left: none; } }
+
 .containerHead {
   width: 100%;
   height: 70px;
@@ -446,16 +467,19 @@ span.price {
   display: inline-block;
   position: absolute;
   vertical-align: top;
-  top: -102px;
+  top: 25px;
   margin-left: 70px; }
   .headerMenu li {
-    display: inline;
+    display: inline-block;
     padding-right: 20px; }
-
-a:hover {
-  width: 100%;
-  height: 100%;
-  color: white; }
+  .headerMenu a {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    color: white;
+    margin-top: 3px; }
 
 .Logo {
   float: left;
@@ -492,10 +516,12 @@ a:hover {
     color: white; }
 
 .contentMenu {
-  margin-top: 10px; }
+  margin-top: 10px;
+  height: 100%; }
 
 .contentMain {
-  margin-left: 10px; }
+  margin-left: 10px;
+  width: auto; }
 
 .insetMenu {
   margin-top: 10px;
@@ -513,3 +539,45 @@ a:hover {
     margin-right: 6px; }
   .insetMenu .fa-yelp {
     margin-right: 6px; }
+
+.mobileMenu {
+  position: relative;
+  z-index: 999999; }
+  .mobileMenu i {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px; }
+  .mobileMenu ul, .mobileMenu:active ul {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    background: white;
+    border: 5px solid #D382AA;
+    right: 20px;
+    top: 48px;
+    width: 30%;
+    border-radius: 0px 0 4px 4px; }
+  .mobileMenu li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0; }
+  .mobileMenu:hover ul {
+    color: #6CC49A;
+    display: block;
+    list-style: none; }
+    .mobileMenu:hover ul a {
+      color: #6CC49A; }
+    .mobileMenu:hover ul a:hover {
+      color: #DAAF77;
+      text-decoration: none; }
+
+@media only screen and (max-width: 980px) {
+  .Content {
+    height: 699px; } }
+
+@media only screen and (min-width: 990px) {
+  .contentMain {
+    width: 60%; } }
